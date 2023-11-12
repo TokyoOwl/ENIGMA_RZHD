@@ -7,8 +7,7 @@ from spacy.lang.ru.examples import sentences
 import warnings
 warnings.filterwarnings("ignore")
 model_checkpoint = 'cointegrated/rubert-base-cased-nli-threeway'
-filename ='C:/Users/Egor/PycharmProjects/pythonProject1/output.csv'
-
+filename ="output.csv"
 
 reader = pd.read_csv(filename)
 question = reader['question']
@@ -73,30 +72,21 @@ def semantic(text1, text2):
 
 nlp = spacy.load("ru_core_news_sm")
 
-vern = 0
-vopr = 0
+n = 0
 keys = list(dic.keys())
-n = random.choice(keys)
-while True:
-  vopr += 1
+def g_q():
+  global n
+  n = random.choice(keys)
   print(n)
-  inp = input()
-  doc1 = nlp(dic[n])
-  doc2 = nlp(inp)
-  if n == inp:
-    pass
-  elif doc1.similarity(doc2) > 0.15:
+  return n
+
+
+def f_inp(inp):
+  while True:
     if semantic(inp, dic[n]) == 'entailment':
       print('Верно')
-      print('')
-      vern += 1
-      n = random.choice(keys)
+      return 'Верно'
     else:
       print('Ответ неправильный')
-      print('')
       print(dic[n])
-      print('')
-      n = random.choice(keys)
-  else:
-    pass
-
+      return 'Неверно' + "\n" + dic[n]
