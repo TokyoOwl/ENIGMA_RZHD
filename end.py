@@ -77,16 +77,12 @@ keys = list(dic.keys())
 def g_q():
   global n
   n = random.choice(keys)
-  print(n)
   return n
 
 
 def f_inp(inp):
   while True:
     if semantic(inp, dic[n]) == 'entailment':
-      print('Верно')
       return 'Верно'
     else:
-      print('Ответ неправильный')
-      print(dic[n])
       return 'Неверно' + "\n" + dic[n]

@@ -71,11 +71,15 @@ def Page(page: ft.Page):
         filled=True,
         expand=True,
     )
+    def create_new_dialog(e):
+        page.go('/chat')
+        chat.clean()
+        page.update()
     send_button = IconButton(icon=ft.icons.SEND, on_click=increase_try, height=60, width=70)
     message_func = Container(
         content=Row([new_message, send_button], vertical_alignment="end")
     )
-    new_dialog_button = ElevatedButton(text="Создать новый диалог",  color='White', on_click=page.update(), bgcolor=FG, height=70, width=350)
+    new_dialog_button = ElevatedButton(text="Создать новый диалог",  color='White', on_click=create_new_dialog, bgcolor=FG, height=70, width=350)
     rigth_answers = TextField(value="0")
     percent_number = TextField(value="0", text_align="center", width=100, height=70, bgcolor=BG, color='White',suffix_icon=ft.icons.PERCENT_OUTLINED)
     txt_number = TextField(value="0", text_align="center", width=70, height=70, bgcolor=BG, color='White')
