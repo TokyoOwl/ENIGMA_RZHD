@@ -1,7 +1,7 @@
 #ENIGMA_RZHD
 https://www.figma.com/file/zoTz03XaVFgp2bJb1jR19J/APP?type=design&node-id=0%3A1&mode=design&t=GWmZZiCo5MsMuoUe-1
 
-Team Enigma
+TEAM ENIGMA
 1. Шитов Егор - algorithm engineer - https://t.me/festnes - egorshitov@yandex.ru
 2. Гришаев Андрей - database  developer - https://t.me/kanavarrr - grischaev.andrei2015@yandex.ru
 3. Шмыров Артём - backed developer - https://t.me/TokyoOwl - wot291@gmail.com
