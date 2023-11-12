@@ -7,3 +7,4 @@ TEAM ENIGMA
 3. Шмыров Артём - backed developer - https://t.me/TokyoOwl - wot291@gmail.com
 4. Бурьян Никита - frontend developer - https://t.me/Inconsp1cuous - buryan-nikita1@yandex.com
 5. Бронников Руслан - team leader - https://t.me/Brofistman - ggwpm416@gmail.com
+
